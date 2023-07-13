@@ -35,6 +35,15 @@
     text-align: left;
   }
 
+  h2::before{
+    content: " ";
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: var(--bg--secondary)
+  }
+
   h3{
     text-align: center;
     color: #fff;
@@ -118,6 +127,7 @@
     text-decoration: none;
     color: var(--text--secondary);
     border-bottom: 0.5px solid var(--text--secondary);
+
   }
   
   .sidebar li a:hover {
@@ -126,7 +136,7 @@
   }
   
   .hamburger {
-    display: none;
+    
     cursor: pointer;
     padding: 10px;
   }
@@ -134,14 +144,15 @@
   .hamburger i {
     font-size: 20px;
   }
+
+  .menu.show {
+    display: block;
+  }
   
+  .menu {
+    display: none;
+  }
   @media (max-width: 768px) {
-    .menu {
-      display: none;
-    }
-    .menu.show {
-      display: block;
-    }
     .hamburger {
       display: block;
     }

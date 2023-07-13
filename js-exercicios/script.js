@@ -99,12 +99,11 @@ function mediaMatriz(){
     document.getElementById('resultado9').textContent = `Media: ${media}`;
 }
 
-function toggleSidebar(){
-    var hamburger = document.querySelector('.hamburger');
-    var menu = document.querySelector('.menu');
+var hamburger = document.querySelector('.hamburger');
+var menu = document.querySelector('.menu');
 
-    hamburger.addEventListener('click', function() {
+hamburger.addEventListener('click', function() {
     menu.classList.toggle('show');
+    console.log('clicou');
 });
-}
 
