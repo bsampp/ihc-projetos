@@ -148,5 +148,10 @@
     section {
       margin-left: 10%;
     }
+
+    button{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
   }
   
