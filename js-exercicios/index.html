@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercícios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1> Exercícios Javascript</h1>
+        <h3>Bruno Sampietro</h3>
+    </header>
+    <div class="wrapper">
+        <nav>
+            <div class="sidebar">
+                <div class="hamburger" onclick="toggleSidebar()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu">
+                    <li><a href="#exercicio1">1</a></li>
+                    <li><a href="#exercicio2">2</a></li>
+                    <li><a href="#exercicio3">3</a></li>
+                    <li><a href="#exercicio4">4</a></li>
+                    <li><a href="#exercicio5">5</a></li>
+                    <li><a href="#exercicio6">6</a></li>
+                    <li><a href="#exercicio7">7</a></li>
+                    <li><a href="#exercicio8">8</a></li>
+                    <li><a href="#exercicio9">9</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <div id="exercicio1">
+                <h2>Exercício 1.</h2>
+                <!-- Conteúdo do exercício 1 -->
+                <p class="enunciado">Escreva um programa em JavaScript que exiba na tela o maior número
+                    entre dois números fornecidos pelo usuário.</p>
+                <div class="exercicio">
+                    <label for="num1">Número 1:</label>
+                    <input type="number" id="num1" name="num1">
+                    <label for="num2">Número 2:</label>
+                    <input type="number" id="num2" name="num2">
+                    <button onclick="maiorNumero()">Maior número</button>
+                    <p id="resultado1" class="resultado"></p>
+                </div>
+            </div>
+            <div id="exercicio2">
+                <h2>Exercício 2.</h2>
+                <!-- Conteúdo do exercício 2 -->
+                <p class="enunciado">Escreva um programa em JavaScript que exiba na tela uma mensagem
+                    de acordo com a nota do usuário. Se a nota for menor do que 6, exiba
+                    "Reprovado". Se a nota for maior ou igual a 6 e menor do que 8, exiba
+                    "Aprovado". Se a nota for maior ou igual a 8, exiba "Aprovado com louvor".
+                </p>
+                <div class="exercicio">
+                    <label for="nota">Nota:</label>
+                    <input type="number" id="nota" name="nota">
+                    <button onclick="verificarNota()">Verificar nota</button>
+                    <p id="resultado2" class="resultado"></p>
+                </div>
+            </div>
+            <div id="exercicio3">
+                <h2>Exercício 3.</h2>
+                <!-- Conteúdo do exercício 3 -->
+                <p class="enunciado">Escreva um programa em JavaScript que exiba na tela a média dos
+                    números de um vetor.
+                </p>
+                <div class="exercicio">
+                    <p>*Insira os números separados por vírgula ou espaço</p>
+                    <p>*Utilize . para números decimais</p>
+                    <label for="numeros">Números:</label>
+                    <input type="text" id="numerosInput">
+                    <button onclick="media()">Calcular média</button>
+                    <p id="resultado3" class="resultado"></p>
+                </div>
+        
+            </div>
+            <div id="exercicio4">
+                <h2>Exercício 4.</h2>
+                <!-- Conteúdo do exercício 4 -->
+                <p class="enunciado">Escreva um programa em JavaScript que exiba na tela uma mensagem
+                    de acordo com o valor de uma variável. Se a variável for igual a "a", exiba
+                    "A". Se a variável for igual a "b", exiba "B". Se a variável não for nem "a"
+                    nem "b", exiba "Outra letra".
+                </p>
+                <div>
+                    <label for="letra">Letra:</label>
+                    <input type="text" id="letra" name="letra">
+                    <button onclick="verificarLetra()">Verificar letra</button>
+                    <p id="resultado4" class="resultado"></p>
+                </div>
+            </div>
+            <div id="exercicio5">
+                <h2>Exercício 5.</h2>
+                <!-- Conteúdo do exercício 5 -->
+                <p class="enunciado">Escreva um programa em JavaScript que exiba na tela a soma dos
+                    elementos de uma matriz.
+                </p>
+                <div class="exercicio">
+                    <p>*Insira os números separados por vírgula ou espaço</p>
+                    <p>*Utilize . para números decimais</p>
+                    <label for="numeros">Números:</label>
+                    <input type="text" id="numerosInput2">
+                    <button onclick="somaMatriz()">Calcular soma</button>
+                    <p id="resultado5" class="resultado"></p>
+                </div>
+            </div>
+            <div id="exercicio6">
+                <h2>Exercício 6.</h2>
+                <!-- Conteúdo do exercício 6 -->
+                <p class="enunciado">Escreva um programa em JavaScript que exiba na tela o fatorial de um
+                    número fornecido pelo usuário.
+                </p>
+                <div class="exercicio">
+                    <label for="num">Número:</label>
+                    <input type="number" id="fat" name="num">
+                    <button onclick="fatorial()">Calcular fatorial</button>
+                    <p id="resultado6" class="resultado"></p>
+                </div>
+            </div>
+            <div id="exercicio7">
+                <h2>Exercício 7.</h2>
+                <!-- Conteúdo do exercício 7 -->
+                <p class="enunciado">Escreva um programa em JavaScript que exiba na tela uma mensagem
+                    de acordo com a escolha do usuário em um menu de opções. O menu
+                    deve ter as opções "1. Opção 1", "2. Opção 2" e "3. Opção 3". Se o usuário
+                    escolher a opção 1, exiba "Opção 1 escolhida". Se o usuário escolher a
+                    opção 2, exiba "Opção 2 escolhida". Se o usuário escolher a opção 3,
+                    exiba "Opção 3 escolhida". Se o usuário escolher uma opção inválida,
+                    exiba "Opção inválida".
+                </p>
+                <div class="exercicio">
+                    <label for="opcao">Opção 1:</label>
+                    <input class="radio-btn" type="radio" id="opcao1" name="opcao"><br>
+                    <label for="opcao">Opção 2:</label>
+                    <input class="radio-btn" type="radio" id="opcao2" name="opcao"><br>
+                    <label for="opcao">Opção 3:</label>
+                    <input class="radio-btn" type="radio" id="opcao3" name="opcao"><br>
+                    <button onclick="verificarOpcao()">Verificar opção</button>
+                    <p id="resultado7" class="resultado"></p>
+                </div>
+            </div>
+            <div id="exercicio8">
+                <h2>Exercício 8.</h2>
+                <!-- Conteúdo do exercício 8 -->
+                <p class="enunciado">Escreva um programa em JavaScript que exiba na tela o maior número
+                    de um vetor.
+                </p>
+                <div class="exercicio">
+                    <p>*Insira os números separados por vírgula ou espaço</p>
+                    <p>*Utilize . para números decimais</p>
+                    <label for="numeros">Números:</label>
+                    <input type="text" id="numerosInput3">
+                    <button onclick="maiorNumeroVetor()">Calcular maior número</button>
+                    <p id="resultado8" class="resultado"></p>
+                </div>
+            </div>
+            <div id="exercicio9">
+                <h2>Exercício 9.</h2>
+                <!-- Conteúdo do exercício 9 -->
+                <p class="enunciado">Escreva um programa em JavaScript que exiba na tela a média dos
+                    elementos de uma matriz.
+                </p>
+                <div class="exercicio">
+                    <p>*Insira os números separados por vírgula ou espaço</p>
+                    <p>*Utilize . para números decimais</p>
+                    <label for="matriz">Matriz:</label>
+                    <input type="text" id="matrizInput">
+                    <button onclick="mediaMatriz()">Calcular média</button>
+                    <p id="resultado9" class="resultado"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
