@@ -1,2 +1,2 @@
 # Projetos IHC
-Projetos realizados na matéria interação humano computador
+Projetos desenvolvidos na matéria interação humano computador
