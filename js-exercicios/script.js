@@ -47,7 +47,7 @@ function maiorNumero(){
     if(letra == 'a' || letra == 'b'){
       resultado = letra.toUpperCase();
     }else{
-      resultado = letra;
+      resultado = 'Outra letra';
     }
     document.getElementById('resultado4').textContent ="Resultado: " + resultado;
   }
@@ -104,6 +104,5 @@ var menu = document.querySelector('.menu');
 
 hamburger.addEventListener('click', function() {
     menu.classList.toggle('show');
-    console.log('clicou');
 });
 
