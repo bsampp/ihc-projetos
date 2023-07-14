@@ -1,4 +1,4 @@
-function maiorNumero(){
+ function maiorNumero(){
    
     var numero1 = parseFloat(document.getElementById('num1').value);
     var numero2 = parseFloat(document.getElementById('num2').value);
@@ -99,10 +99,35 @@ function mediaMatriz(){
     document.getElementById('resultado9').textContent = `Media: ${media}`;
 }
 
-var hamburger = document.querySelector('.hamburger');
-var menu = document.querySelector('.menu');
 
-hamburger.addEventListener('click', function() {
-    menu.classList.toggle('show');
-});
+function initScrollSuave() {
+  const linksInternos = document.querySelectorAll('.menu li a[href^="#"]');
+
+  const scrollToSection = (event) => {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    const section = document.querySelector(href);
+    section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
+
+  linksInternos.forEach(link => {
+    link.addEventListener('click', scrollToSection);
+  });
+}
+
+initScrollSuave();
+
+function toggleSidebar(){
+  var hamburger = document.querySelector('.hamburger');
+  var menu = document.querySelector('.menu');
+
+  hamburger.addEventListener('click', function() {
+      menu.classList.toggle('show');
+  });
+}
+
+toggleSidebar();
 

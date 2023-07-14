@@ -13,7 +13,7 @@
   }
   
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Mukta', 'Roboto', sans-serif;
     font-size: 1.2rem;
     color: var(--text--primary);
     background-color: var(--bg--primary);
@@ -54,8 +54,8 @@
   
   header {
     background-color: var(--bg--secondary);
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
     box-shadow: black 0px 0px 10px;
   }
   
@@ -90,9 +90,11 @@
   }
   
   .resultado {
+    font-weight: 700;
     color: var(--text--secondary);
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 1rem;
   }
   
   .radio-btn {
@@ -126,13 +128,14 @@
     padding: 10px;
     text-decoration: none;
     color: var(--text--secondary);
-    border-bottom: 0.5px solid var(--text--secondary);
+    transition: 0.2s;
 
   }
+
+  
   
   .sidebar li a:hover {
-    background-color: #555;
-    color: #fff;
+    color: #ffc635;
   }
   
   .hamburger {
@@ -147,11 +150,14 @@
 
   .menu.show {
     display: block;
+    left: 0;
   }
   
   .menu {
     display: none;
+    transition: left 0.3s ease;
   }
+  
   @media (max-width: 768px) {
     .hamburger {
       display: block;
